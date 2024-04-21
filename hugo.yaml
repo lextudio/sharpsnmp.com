@@ -1,0 +1,245 @@
+baseURL: https://www.sharpsnmp.com/
+languageCode: en-us
+title: "#SNMP Family: SNMP for .NET Developers"
+
+# module:
+#   # uncomment line below for local development of module
+#   # workspace: hugo.work
+#   imports:
+#     path: github.com/StefMa/hugo-fresh
+theme: 'hugo-fresh'
+
+googleAnalytics: G-3PM59RVPTC # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description: |
+    #SNMP is a family of .NET based SNMP products, including the commercial MIB Compiler, MIB Assembly, and the open source Library.
+
+  # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
+  # preloader: false
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: lextudio.svg
+    link: /
+    # Default width/height. Uncomment if you need to change
+    width: 36 # max: 36
+    # height: 36
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: "#SNMP Family"
+    # Hero subtitle (optional)
+    subtitle: |
+      A family of .NET based SNMP products, including the commercial MIB Compiler, MIB Assembly, and the open source Library.
+    # Button text
+    buttontext: Learn more
+    # Where the main hero button links to
+    buttonlink: "#section1"
+    # Hero image (from static/images/___)
+    image: vs2012.webp
+    # Footer logos (from static/images/logos/clients/*.svg)
+    # urls are optional
+    clientlogos:
+    - logo: airbus
+    - logo: vodafone
+    - logo: abb
+    - logo: l3harris
+
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Features
+    url: "#section1"
+  - title: Services
+    url: "#section5"
+  - title: Editions
+    sublinks:
+    - title: Open Source
+      url: https://docs.lextudio.com/sharpsnmplib
+    - title: Pro
+      url: https://docs.lextudio.com/sharpsnmppro
+  - title: Blog
+    url: https://docs.lextudio.com/blog/tags/snmp/
+  - title: LeXtudio Inc.
+    url: https://www.lextudio.com/
+    # - title: Dropdown item
+    #   url: /
+  # - title: Log in
+  #   url: /
+  # - title: Sign up
+  #   url: /
+  #   button: true
+  # sidebar:
+  #   # Logo (from /images/logos/___.svg)
+  #   logo: fresh-square
+  #   sections:
+  #   - title: User
+  #     icon: user
+  #     links:
+  #     - text: Profile
+  #       url: /
+  #     - text: Account
+  #       url: /
+  #     - text: Settings
+  #       url: /
+  #   - title: Messages
+  #     icon: envelope
+  #     links:
+  #     - text: Inbox
+  #       url: /
+  #     - text: Compose
+  #       url: /
+  #   - title: Images
+  #     icon: image
+  #     links:
+  #     - text: Library
+  #       url: /
+  #     - text: Upload
+  #       url: /
+  #   - title: Settings
+  #     icon: cog
+  #     links:
+  #     - text: User settings
+  #       url: /
+  #     - text: App settings
+  #       url: /
+  section1:
+    title: Product Features
+    subtitle: Simple but powerful. We offer products for all levels of developers who need SNMP support.
+    tiles:
+    - title: Rich Metadata Extraction
+      icon: number1 
+      text: |
+        Types and constraints can be thoroughly analyzed.
+      url: https://docs.lextudio.com/sharpsnmppro/getting-started/compiler-features#accurate-error-reporting-and-rich-metadata-extraction
+      buttonText: Learn more
+    - title: SharpSnmpPro.Mib Assembly
+      icon: number2
+      text: |
+        Key component that empowers the Compiler Pro.
+      url: https://docs.lextudio.com/sharpsnmppro/getting-started/assembly-features.html
+      buttonText: Learn more
+    - title: "Accurate Error Reporting"
+      icon: number3
+      text: |
+        Detailed error messages for troubleshooting.
+      url: https://docs.lextudio.com/sharpsnmppro/getting-started/compiler-features#error-list
+      buttonText: Learn more
+  # section2:
+  #   title: Our Services
+  #   subtitle: We provide consulting services on our products as well as other technologies.
+  #   features:
+  #   - title: Powerful and unified interface
+  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+  #     # Icon (from /images/illustrations/icons/___.svg)
+  #     icon: laptop-globe
+  #   - title: Cross-device synchronisation
+  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+  #     icon: doc-sync
+  #   - title: Nomad system
+  #     text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+  #     icon: mobile-feed
+  # section3:
+  #   title: One platform
+  #   subtitle: To rule them all
+  #   image: illustrations/mockups/app-mockup.png
+  #   buttonText: Get started
+  #   buttonLink: "#"
+  # section4:
+  #   title: Our Clients love us!
+  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
+  #   clients:
+  #   - name: Irma Walters
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Accountant
+  #     img: 1
+  #   - name: John Bradley
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: Financial Analyst
+  #     img: 2
+  #   - name: Gary Blackman
+  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+  #     job: HR Manager
+  #     img: 3
+  section5:
+    title: Contact Us
+    subtitle: We'd love to hear from you (product feedback, trials, service requests, etc.)!
+    buttonText: Send Message
+    action: https://formspree.io/f/xayrlaky
+    method: POST
+  footer:
+    # Logo (from /images/logos/___)
+    logo:
+      image: sharpsnmp.svg
+      link: /
+      # Default width/height. Uncomment if you need to change
+      width: 64 # max: 64
+      # height: 36
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/lextudio
+      # Icons are from Font Awesome
+      icon: github
+    # - link: https://dribbble.com/#
+    #   icon: dribbble
+    # - link: https://facebook.com/#
+    #   icon: facebook
+    - link: https://twitter.com/lextudio
+      icon: twitter
+    - link: https://www.linkedin.com/company/lextudio
+      icon: linkedin
+    - link: https://www.youtube.com/user/lextudio
+      icon: youtube
+    - link: https://www.instagram.com/lextudio
+      icon: instagram
+    # - link: https://bitbucket.org/#
+    #   icon: bitbucket
+    bulmalogo: true
+    quicklinks:
+      column1:
+        title: "Editions"
+        links:
+        - text: "Open Source"
+          link: https://docs.lextudio.com/sharpsnmplib
+        - text: Pro
+          link: https://docs.lextudio.com/sharpsnmppro/index.html
+        - text: More on Catalog
+          link: https://docs.lextudio.com
+        # - text: Our roadmap
+        #   link: /
+        # - text: AGB
+        #   link: /agb
+      column2:
+        title: "Services"
+        links:
+        - text: Bugfixes
+          link: https://docs.lextudio.com/services/patching.html
+        - text: Consulting
+          link: https://docs.lextudio.com/services/consulting.html
+        - text: Trainings
+          link: https://docs.lextudio.com/services/training.html
+        # - text: Developers
+        #   link: /
+      column3:
+        title: "Docs"
+        links:
+        - text: "LeXtudio Docs"
+          link: https://docs.lextudio.com/
+        - text: Blog
+          link: https://docs.lextudio.com/blog/tags/snmp/
+        - text: Privacy Policy
+          link: https://docs.lextudio.com/privacy
