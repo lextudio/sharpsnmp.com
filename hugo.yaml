@@ -1,6 +1,6 @@
 baseURL: https://www.sharpsnmp.com/
 languageCode: en-us
-title: "#SNMP Family: SNMP for .NET Developers"
+title: "C# SNMP Family: SNMP Tooling for .NET Developers"
 
 # module:
 #   # uncomment line below for local development of module
@@ -24,7 +24,7 @@ params:
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy
   description: |
-    #SNMP is a family of .NET based SNMP products, including the commercial MIB Compiler, MIB Assembly, and the open source Library.
+    C# SNMP is a family of .NET based SNMP products, including the commercial MIB Compiler, MIB Assembly, and the open source Library.
 
   # Preloader ensures images are loaded before displaying to the user. If you don't want it uncomment to set it to false
   # preloader: false
@@ -40,7 +40,7 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: "#SNMP Family"
+    title: "C# SNMP Family"
     # Hero subtitle (optional)
     subtitle: |
       A family of .NET based SNMP products, including the commercial MIB Compiler, MIB Assembly, and the open source Library.
@@ -60,7 +60,7 @@ params:
 
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Features
+  - title: Products
     url: "#section1"
   - title: Services
     url: "#section5"
@@ -116,25 +116,25 @@ params:
   #     - text: App settings
   #       url: /
   section1:
-    title: Product Features
-    subtitle: Simple but powerful. We offer products for all levels of developers who need SNMP support.
+    title: Products
+    subtitle: Simple but powerful. We offer products for all levels of developers and professionals who work on SNMP.
     tiles:
-    - title: Rich Metadata Extraction
+    - title: C# SNMP Library
       icon: number1 
       text: |
-        Types and constraints can be thoroughly analyzed.
-      url: https://docs.lextudio.com/sharpsnmppro/getting-started/compiler-features#accurate-error-reporting-and-rich-metadata-extraction
+        Free and open source SNMP library for .NET, supporting SNMPv1/v2c/v3 with a rich set of essential features.
+      url: https://docs.lextudio.com/sharpsnmplib/
       buttonText: Learn more
-    - title: SharpSnmpPro.Mib Assembly
+    - title: C# SNMP Pro
       icon: number2
       text: |
-        Key component that empowers the Compiler Pro.
+        Commercial SNMP library for .NET with advanced features like MIB compilation and object tree construction.
       url: https://docs.lextudio.com/sharpsnmppro/getting-started/assembly-features.html
       buttonText: Learn more
-    - title: "Accurate Error Reporting"
+    - title: "MIB Compiler Pro"
       icon: number3
       text: |
-        Detailed error messages for troubleshooting.
+        Commercial MIB compiler for .NET that generates C# assemblies from MIB files. In maintenance mode.
       url: https://docs.lextudio.com/sharpsnmppro/getting-started/compiler-features#error-list
       buttonText: Learn more
   # section2:
@@ -173,9 +173,33 @@ params:
   #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
   #     job: HR Manager
   #     img: 3
+  sectionStudio:
+    title: "SNMP Studio for Visual Studio Code"
+    subtitle: "Next-generation SNMP tooling for .NET developers, built for the AI era."
+    items:
+    - title: "OID Explorer"
+      image: oid-explorer.png
+      text: |
+        Explore and search MIBs and OIDs inline — copy OIDs, view attributes, and open definitions in files.
+    - title: "Dependency Graph"
+      image: dependency-graph.png
+      text: |
+        Visualize MIB/module relationships to understand imports and dependencies at a glance.
+    - title: "Highlighting and Navigation"
+      image: semantic-highlighting.png
+      text: |
+        Semantic highlighting with perfect accuracy, plus go-to-definition and find-references inside MIB files.
+      # Optional per-item settings (none currently)
+    # Optional private beta notice settings for the Studio section
+    beta:
+      enabled: true
+      label: "Notice"
+      message: "This product is currently under development. Sign up to join the private beta program and get early access."
+      buttonText: "Enroll"
+      buttonLink: "#section5"
   section5:
     title: Contact Us
-    subtitle: We'd love to hear from you (product feedback, trials, service requests, etc.)!
+    subtitle: We'd love to hear from you (beta program enrollment, product feedback, trials, service requests, etc.)!
     buttonText: Send Message
     action: https://formspree.io/f/xayrlaky
     method: POST
