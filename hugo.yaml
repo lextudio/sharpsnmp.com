@@ -189,6 +189,18 @@ params:
       text: |
         Semantic highlighting with perfect accuracy, plus go-to-definition and find-references inside MIB files.
       # Optional per-item settings (none currently)
+    - title: "Message Session"
+      image: message-session.png
+      text: |
+        Inspect and replay SNMP message sessions inline — view requests and responses with timing and payload details.
+    - title: "Table View"
+      image: table-view.png
+      text: |
+        Browse large MIB tables with an interactive table view — filter rows, export CSV, and inspect column variables.
+    - title: "Walk View"
+      image: walk-view.png
+      text: |
+        Perform OID walks and visualize results in a clear list; copy OIDs and values or export results.
     # Optional private beta notice settings for the Studio section
     beta:
       enabled: true
