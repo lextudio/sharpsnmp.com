@@ -174,7 +174,7 @@ params:
   #     img: 3
   sectionStudio:
     title: "SNMP Studio for Visual Studio Code"
-    subtitle: "Next-generation SNMP tooling for .NET developers, built for the AI era."
+    subtitle: "Next-generation cross-platform SNMP tooling for all professionals, embracing the AI era."
     items:
     - title: "OID Explorer"
       image: oid-explorer.png
