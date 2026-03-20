@@ -201,6 +201,10 @@ params:
       image: walk-view.png
       text: |
         Perform OID walks and visualize results in a clear list; copy OIDs and values or export results.
+    - title: "MCP Support"
+      image: snmp-mcp.png
+      text: |
+        Rich workspace metadata to feed AI assistants and enable advanced MIB design and development workflows.
     # Optional private beta notice settings for the Studio section
     beta:
       enabled: true
