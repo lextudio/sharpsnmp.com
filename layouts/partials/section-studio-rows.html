@@ -4,55 +4,6 @@
 {{- $subtitle := index $studio "subtitle" }}
 {{- $items := index $studio "items" }}
 <section class="section is-medium" id="section-studio">
-  <style>
-    /* Scoped styles for SNMP Studio section */
-    #section-studio .studio-row{ padding:2rem 0; }
-    #section-studio .studio-image{ overflow:hidden; display:flex; align-items:center; justify-content:center; background:transparent; }
-    #section-studio .studio-image img{ width:100%; height:100%; object-fit:cover; display:block; box-shadow:none; border-radius:0; background:transparent; }
-    #section-studio .studio-image{ max-height:560px; }
-    @media (max-width:1024px){ #section-studio .studio-image{ max-height:420px; } }
-    @media (max-width:768px){ #section-studio .studio-image{ max-height:280px; } }
-    #section-studio .studio-card{ padding:1.5rem; }
-    #section-studio .studio-content h4{ margin-top:0; margin-bottom:.5rem; }
-    /* Announcement bubble styles - use CSS Grid so items in the same row stretch to equal height */
-    #section-studio .announcements-wrapper{
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-      align-items: stretch;
-    }
-
-    #section-studio .announcement-bubble{
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      height: 100%;
-      border-radius: 28px;
-      padding: .75rem 1rem;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      min-width: 0;
-    }
-
-    #section-studio .announcement-bubble .content{
-      flex: 1 1 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: left;
-    }
-
-    #section-studio .announcement-bubble .title{ margin-bottom:.25rem; }
-
-    @media (max-width:1024px){
-      #section-studio .announcements-wrapper{ grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @media (max-width:768px){
-      #section-studio .announcements-wrapper{ grid-template-columns: 1fr; padding:0 1rem; }
-      #section-studio .announcement-bubble{ width:100%; }
-    }
-  </style>
   <div class="container">
     <div class="title-wrapper has-text-centered">
       <h2 class="title is-2">{{ $title }}</h2>
@@ -90,7 +41,7 @@
             {{- end }}
             {{- with index $a "buttonText" }}
               <p class="has-text-centered">
-                <a class="button cta is-medium rounded secondary-btn raised" href="{{ default "#section5" (index $a "buttonLink") }}">{{ . }}</a>
+                <a class="button cta is-small rounded secondary-btn raised" href="{{ default "#section5" (index $a "buttonLink") }}">{{ . }}</a>
               </p>
             {{- end }}
           </div>
@@ -126,7 +77,7 @@
         {{- end }}
         {{- with index $beta "buttonText" }}
           <p class="has-text-centered">
-            <a class="button cta is-medium rounded secondary-btn raised" href="{{ default "#section5" (index $beta "buttonLink") }}">{{ . }}</a>
+            <a class="button cta is-small rounded secondary-btn raised" href="{{ default "#section5" (index $beta "buttonLink") }}">{{ . }}</a>
           </p>
         {{- end }}
       </div>
@@ -140,16 +91,16 @@
         {{- $isEven := eq (mod $i 2) 0 }}
         {{- if $isEven }}
         <div class="column is-7 studio-image">
-          <img src="{{ printf "/images/%s" $it.image | relURL }}" alt="{{ $it.title }}">
+          <img src="{{ printf "/images/%s" $it.image | relURL }}" alt="{{ $it.title }}" width="3680" height="2224" loading="lazy" decoding="async">
         </div>
         <div class="column is-5">
           <div class="box studio-card">
             <div class="studio-content">
               <h4 class="title is-4">{{ $it.title }}</h4>
-              <div class="mb-4">{{ $it.text | markdownify }}</div>
+              <div class="studio-copy mb-4">{{ $it.text | markdownify }}</div>
               {{- with $it.url }}
               <p class="mt-20">
-                <a class="button cta is-medium rounded secondary-btn raised" href="{{ . }}">Learn more</a>
+                <a class="button cta is-small rounded secondary-btn raised" href="{{ . }}">Learn more</a>
               </p>
               {{- end }}
             </div>
@@ -160,17 +111,17 @@
           <div class="box studio-card">
             <div class="studio-content">
               <h4 class="title is-4">{{ $it.title }}</h4>
-              <p class="mb-4">{{ $it.text }}</p>
+              <div class="studio-copy mb-4">{{ $it.text | markdownify }}</div>
               {{- with $it.url }}
               <p class="mt-20">
-                <a class="button cta is-medium rounded secondary-btn raised" href="{{ . }}">Learn more</a>
+                <a class="button cta is-small rounded secondary-btn raised" href="{{ . }}">Learn more</a>
               </p>
               {{- end }}
             </div>
           </div>
         </div>
         <div class="column is-7 studio-image">
-          <img src="{{ printf "/images/%s" $it.image | relURL }}" alt="{{ $it.title }}">
+          <img src="{{ printf "/images/%s" $it.image | relURL }}" alt="{{ $it.title }}" width="3680" height="2224" loading="lazy" decoding="async">
         </div>
         {{- end }}
       </div>
